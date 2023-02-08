@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DTTAssesmentAndroid</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_about">About</string>
+    <string name="about_lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Pulvinar pellentesque habitant morbi tristique senectus et netus. Non consectetur a erat nam. Amet nisl suscipit adipiscing bibendum est ultricies integer. Urna et pharetra pharetra massa massa. Amet luctus venenatis lectus magna fringilla urna. Id velit ut tortor pretium viverra suspendisse potenti. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Elit pellentesque habitant morbi tristique senectus et netus et. Id diam vel quam elementum pulvinar. Arcu non sodales neque sodales ut etiam sit amet. At imperdiet dui accumsan sit amet nulla facilisi morbi. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Maecenas accumsan lacus vel facilisis volutpat est.</string>
+    <string name="about_developer">Design and Development</string>
+    <string name="title_favourites">Favourites</string>
+    <string name="by_dtt">by DTT \nd-tt.nl</string>
+    <string name="no_result_found">No Results Found</string>
+    <string name="perhaps_try_another_search">Perhaps try another search?</string>
+    <string name="dtt_real_estate">DTT REAL ESTATE</string>
+    <string name="description">Description</string>
+    <string name="location">Location</string>
+    <string name="map_of_the_house_location">Map of the house location</string>
+    <string name="no_results_found">No Results Found!</string>
+</resources>

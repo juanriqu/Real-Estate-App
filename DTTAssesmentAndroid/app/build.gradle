@@ -1,0 +1,121 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace 'com.example.dttassesmentandroid'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.dttassesmentandroid"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        resValue "string", "google_maps_api_key", GOOGLE_MAPS_API_KEY
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    def room_version = '2.4.3'
+    def lifecycle_version = '2.5.1'
+    def recycleView_version = "1.2.1"
+    def daggerHilt_version = "2.44"
+    def navigation_version = "2.5.3"
+    def coil_version = "2.2.2"
+    def timber_version = "5.0.1"
+    def drawerLayout_version = "1.1.1"
+    def fragment_version = "1.5.5"
+    def activity_version = "1.6.1"
+    def retrofitVersion = "2.9.0"
+    def okHttpVersion = "4.9.1"
+    def splashScreenVersion = "1.0.0"
+    def mapsVersion = "18.0.2"
+    def locationVersion = "18.0.0"
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //Material Design Components
+    implementation 'com.google.android.material:material:1.7.0'
+
+    //Splash Screen libraries
+    implementation "androidx.core:core-splashscreen:$splashScreenVersion"
+
+    //RecycleView libraries for displaying list of data
+    implementation "androidx.recyclerview:recyclerview:$recycleView_version"
+
+    //Retrofit && okHttps libraries for network calls
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+    //Navigation libraries for navigation between fragments
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+
+    // Fragment Container View && DrawerLayout libraries for fragments
+    implementation "androidx.drawerlayout:drawerlayout:$drawerLayout_version"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+
+    //ViewModel libraries and LiveData
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+
+    // by ViewModels delegation extensions for activity
+    implementation "androidx.activity:activity-ktx:$activity_version"
+
+    //Timber libraries for logging
+    implementation "com.jakewharton.timber:timber:$timber_version"
+
+    // Room libraries for database
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    //Dagger Hilt libraries for dependency injection
+    implementation "com.google.dagger:hilt-android:$daggerHilt_version"
+    kapt "com.google.dagger:hilt-compiler:$daggerHilt_version"
+
+    //Coil libraries for image loading
+    implementation "io.coil-kt:coil:$coil_version"
+
+    //Maps libraries for displaying map
+    implementation "com.google.android.gms:play-services-maps:$mapsVersion"
+
+    //Location libraries for getting location
+    implementation "com.google.android.gms:play-services-location:$locationVersion"
+
+    // Test libraries
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

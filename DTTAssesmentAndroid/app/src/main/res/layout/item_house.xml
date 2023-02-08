@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewHouse"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginHorizontal="25sp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="8sp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/km_number_textView"
+            android:layout_width="45dp"
+            android:layout_height="12dp"
+            android:textIsSelectable="false"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833"
+            app:tint="@color/medium_grey" />
+
+        <ImageView
+            android:id="@+id/km_number_icon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.806"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833"
+            app:srcCompat="@drawable/ic_location"
+            app:tint="@color/medium_grey"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/housePrice"
+            android:layout_width="193dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/gothamssm_bold"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.146"
+            app:layout_constraintStart_toEndOf="@+id/houseImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.195" />
+
+        <TextView
+            android:id="@+id/houseZipCode"
+            android:layout_width="233dp"
+            android:layout_height="16dp"
+            android:fontFamily="@font/gothamssm_medium"
+            android:textIsSelectable="false"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.302"
+            app:layout_constraintStart_toEndOf="@+id/houseImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.404" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/houseImageView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.545"
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/bedroom_number_icon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:fontFamily="@font/gothamssm_book"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.295"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833"
+            app:srcCompat="@drawable/ic_bed"
+            app:tint="@color/medium_grey"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/house_bedroom_number"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:fontFamily="@font/gothamssm_book"
+            android:textIsSelectable="false"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833"
+            app:tint="@color/medium_grey" />
+
+        <ImageView
+            android:id="@+id/bathroom_number_icon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833"
+            app:srcCompat="@drawable/ic_bath"
+            app:tint="@color/medium_grey"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/house_bathroom_number"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:fontFamily="@font/gothamssm_book"
+            android:textIsSelectable="false"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833"
+            app:tint="@color/medium_grey" />
+
+        <TextView
+            android:id="@+id/house_meters_number"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:fontFamily="@font/gothamssm_book"
+            android:textIsSelectable="false"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.829"
+            app:tint="@color/medium_grey" />
+
+        <ImageView
+            android:id="@+id/square_meters_number_icon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.637"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.826"
+            app:srcCompat="@drawable/ic_layers"
+            app:tint="@color/medium_grey"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
