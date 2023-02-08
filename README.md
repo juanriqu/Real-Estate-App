@@ -57,7 +57,7 @@ Clone this repository and open it in Android Studio, then build and run the app.
 
 ## Instructions
 
-If you want to know the difference usage of code in the app, you can check the comments in the code.
+If you want to know the different usage of code in the app, you can check the comments in the code.
 
 ## Architecture
 
