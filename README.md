@@ -26,7 +26,7 @@ Minimum SDK 21 (Android 5.0 Lollipop).
 The app has the following screens:
 
 * Splash Screen
-* List of Houses (With searchbar, searching by Postal Code and City)
+* List of Houses (With searchbar, searching by Postal Code or City)
 * Detailed House
 * About
 
