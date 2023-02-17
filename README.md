@@ -32,30 +32,32 @@ The app has the following screens:
 
 (See screenshots above)
 
-## Guidelines
+## Installation & Guidelines
 
 This app has been tested in a Pixel 3XL, to take in consideration the screen size and the density.
 
-To use the app with location services, you need to have a Google Maps API key.
-You can get
-one [here](https://developers.google.com/maps/documentation/android-sdk/get-api-key) and add it to
-your `gradle.properties` file like this the example below:
+1. Clone this repository and open it in Android Studio.
+    - To use the app with location services, you need to have a Google Maps API key. You can get yours [here](https://developers.google.com/maps/documentation/android-sdk/get-api-key).
 
-``
-GOOGLE_MAPS_API_KEY= "YOUR_API_KEY"
-``
+2. Create the `gradle.properties` file in this path [DTTAssesmentAndroid/](https://github.com/juanriqu/Real-Estate-App/tree/main/DTTAssesmentAndroid/) and add the following lines like this example below:
 
-This can be used without location services, but the distance shown will be N/A.
+    `android.useAndroidX=true`
 
-To use it with location You have to simulate the location of the device in the emulator.
-To do that you go to google maps first and click in locate me button, then you can open the app and the distance will be
-calculated correctly, else it will show N/A.
+    `android.enableJetifier=true`
 
-## Installation
+    `GOOGLE_MAPS_API_KEY= "YOUR_API_KEY"`
 
-Clone this repository and open it in Android Studio, then build and run the app.
+    Note that the app will not work if you don't add the properties described above with a valid Maps API key.
 
-## Instructions
+3. To build and run the app.
+    - To use it with location, location simulation of the device in the emulator is needed. Follow these steps:
+        - First, go to the Google Maps app and click on the "locate me" button.
+        - Finally, you can open the app and the distance will be shown correctly.
+    
+    - This app can be used without location, but the distance shown will be "N/A".
+
+
+## Code Usage & Instructions
 
 If you want to know the different usage of code in the app, you can check the comments in the code.
 
