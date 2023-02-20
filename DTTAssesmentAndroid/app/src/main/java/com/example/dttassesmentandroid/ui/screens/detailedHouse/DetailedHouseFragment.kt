@@ -9,7 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.findNavController
 import coil.load
 import com.example.dttassesmentandroid.common.Constants
@@ -51,31 +53,34 @@ class DetailedHouseFragment : Fragment(), OnMapReadyCallback {
         configFragmentArguments()
         with(binding) {
             binding.descriptionDetailedTextView.movementMethod = ScrollingMovementMethod()
-            lifecycleScope.launch {
-                viewModel.handleEvent(DetailedHouseContract.Event.GetHouse(houseID.toInt()))
-                viewModel.uiState.collect {
-                    val housePrice = Constants.DOLLAR_CHARACTER + it.house.price.toString()
-                    val houseDistanceTxt = "${
-                        houseDistance.subSequence(
-                            0, houseDistance.indexOf(".")
+            viewLifecycleOwner.lifecycleScope.launch {
+                repeatOnLifecycle(Lifecycle.State.STARTED) {
+                    viewModel.handleEvent(DetailedHouseContract.Event.GetHouse(houseID.toInt()))
+                    viewModel.uiState.collect {
+                        val housePrice = Constants.DOLLAR_CHARACTER + it.house.price.toString()
+                        val houseDistanceTxt = "${
+                            houseDistance.subSequence(
+                                0, houseDistance.indexOf(".")
+                            )
+                        } ${Constants.KM}"
+                        if (houseDistance == "0.0") {
+                            houseDistanceNumberDetailed.text =
+                                Constants.NO_DISTANCE_LOCATION_DISABLED
+                        } else {
+                            houseDistanceNumberDetailed.text = houseDistanceTxt
+                        }
+                        housePriceDetailed.text = housePrice
+                        descriptionDetailedTextView.text = it.house.description
+                        houseBathroomNumberDetailed.text = it.house.bathrooms.toString()
+                        houseBedroomNumberDetailed.text = it.house.bedrooms.toString()
+                        houseLayersNumberDetailed.text = it.house.size.toString()
+                        housePhotoDetailed.load(Constants.IMAGE_RELATIVE_PATH + it.house.image)
+                        configMap(
+                            LatLng(
+                                it.house.latitude.toDouble(), it.house.longitude.toDouble()
+                            )
                         )
-                    } ${Constants.KM}"
-                    if (houseDistance == "0.0") {
-                        houseDistanceNumberDetailed.text = Constants.NO_DISTANCE_LOCATION_DISABLED
-                    } else {
-                        houseDistanceNumberDetailed.text = houseDistanceTxt
                     }
-                    housePriceDetailed.text = housePrice
-                    descriptionDetailedTextView.text = it.house.description
-                    houseBathroomNumberDetailed.text = it.house.bathrooms.toString()
-                    houseBedroomNumberDetailed.text = it.house.bedrooms.toString()
-                    houseLayersNumberDetailed.text = it.house.size.toString()
-                    housePhotoDetailed.load(Constants.IMAGE_RELATIVE_PATH + it.house.image)
-                    configMap(
-                        LatLng(
-                            it.house.latitude.toDouble(), it.house.longitude.toDouble()
-                        )
-                    )
                 }
             }
         }
