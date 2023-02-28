@@ -1,6 +1,6 @@
 package com.example.dttassesmentandroid.data.remote
 
-import com.example.dttassesmentandroid.utils.NetworkResult
+import com.example.dttassesmentandroid.network.NetworkResult
 import retrofit2.Response
 
 //This class is used to handle the response from the API calls with a generic way.

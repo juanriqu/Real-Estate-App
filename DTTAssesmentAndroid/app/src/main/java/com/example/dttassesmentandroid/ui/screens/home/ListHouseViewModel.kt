@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.dttassesmentandroid.common.Constants
 import com.example.dttassesmentandroid.domain.usecases.house.GetAllHousesUseCase
-import com.example.dttassesmentandroid.utils.NetworkResult
+import com.example.dttassesmentandroid.network.NetworkResult
 import com.example.dttassesmentandroid.utils.Utils
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext

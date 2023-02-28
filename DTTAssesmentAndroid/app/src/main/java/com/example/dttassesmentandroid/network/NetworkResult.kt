@@ -1,4 +1,4 @@
-package com.example.dttassesmentandroid.utils
+package com.example.dttassesmentandroid.network
 
 //This class is used to handle the network results in a generic way so that we can use it for any type of data.
 sealed class NetworkResult<T>(

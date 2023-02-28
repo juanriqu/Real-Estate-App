@@ -3,7 +3,7 @@ package com.example.dttassesmentandroid.data.remote
 import com.example.dttassesmentandroid.data.model.toHouse
 import com.example.dttassesmentandroid.domain.model.House
 import com.example.dttassesmentandroid.network.HouseApiService
-import com.example.dttassesmentandroid.utils.NetworkResult
+import com.example.dttassesmentandroid.network.NetworkResult
 import javax.inject.Inject
 
 /**
