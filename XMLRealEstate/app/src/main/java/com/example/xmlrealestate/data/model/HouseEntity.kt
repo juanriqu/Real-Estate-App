@@ -7,12 +7,13 @@ import com.example.xmlrealestate.common.Constants
 import com.example.xmlrealestate.domain.model.House
 import com.google.gson.annotations.SerializedName
 
+/**
+ * [SerializedName] is used to tell Gson which is the name of the field in the JSON response.
+ *
+ * [ColumnInfo] is used to tell Room which is the name of the column in the database.
+ */
 @Entity(tableName = "house")
 data class HouseEntity(
-    /**
-     * @SerializedName is used to tell Gson which is the name of the field in the JSON response.
-     * @ColumnInfo is used to tell Room which is the name of the column in the database.
-     */
     @PrimaryKey(autoGenerate = false) @SerializedName(Constants.HOUSE_ID_COLUMN) @ColumnInfo(name = Constants.HOUSE_ID_COLUMN) val id: Int,
     @SerializedName(Constants.HOUSE_IMAGE_COLUMN) @ColumnInfo(name = Constants.HOUSE_IMAGE_COLUMN) val image: String,
     @SerializedName(Constants.HOUSE_PRICE_COLUMN) @ColumnInfo(name = Constants.HOUSE_PRICE_COLUMN) val price: Int,
