@@ -7,12 +7,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.dttassesmentandroid'
+    namespace 'com.example.xmlrealestate'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.dttassesmentandroid"
-        minSdk 21
+        applicationId "com.example.xmlrealestate"
+        minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -40,23 +40,6 @@ android {
 }
 
 dependencies {
-    def room_version = '2.4.3'
-    def lifecycle_version = '2.5.1'
-    def recycleView_version = "1.2.1"
-    def daggerHilt_version = "2.44"
-    def navigation_version = "2.5.3"
-    def coil_version = "2.2.2"
-    def timber_version = "5.0.1"
-    def drawerLayout_version = "1.1.1"
-    def fragment_version = "1.5.5"
-    def activity_version = "1.6.1"
-    def retrofitVersion = "2.9.0"
-    def okHttpVersion = "4.9.1"
-    def splashScreenVersion = "1.0.0"
-    def mapsVersion = "18.0.2"
-    def locationVersion = "18.0.0"
-
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'

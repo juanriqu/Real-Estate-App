@@ -9,7 +9,7 @@ pattern, API calls, room, database, google maps and more.
 
 ## Requirements
 
-Minimum SDK 21 (Android 5.0 Lollipop).
+Minimum SDK 24 (Android 7.0 Nougat).
 
 
 ## Screenshots
@@ -50,12 +50,9 @@ This app has been tested in a Pixel 3XL, to take in consideration the screen siz
     Note that the app will not work if you don't add the properties described above with a valid Maps API key.
 
 3. To build and run the app.
-    - To use it with location, location simulation of the device in the emulator is needed. Follow these steps:
-        - First, go to the Google Maps app and click on the "locate me" button.
-        - Finally, you can open the app and the distance will be shown correctly.
+    - To use it with location, accept the location permission.
     
     - This app can be used without location, but the distance shown will be "N/A".
-
 
 ## Code Usage & Instructions
 

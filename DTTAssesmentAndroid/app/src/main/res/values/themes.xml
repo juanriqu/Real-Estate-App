@@ -24,7 +24,7 @@
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/red</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_dtt_splashscreen</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <item name="postSplashScreenTheme">@style/Theme.DTTAssesmentAndroid</item>
     </style>
 

@@ -14,17 +14,17 @@
         <!-- Customize your theme here. -->
     </style>
 
-<!--    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">-->
-<!--        <item name="android:editTextColor">@color/white</item>-->
-<!--        <item name="android:textColor">@color/white</item>-->
-<!--        <item name="android:textColorHint">@android:color/tertiary_text_light</item>-->
-<!--        <item name="android:textSize">12sp</item>-->
-<!--        <item name="android:fontFamily">@font/gothamssm_light</item>-->
-<!--    </style>-->
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@android:color/tertiary_text_light</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/gothamssm_light</item>
+    </style>
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/red</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_dtt_splashscreen</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <item name="postSplashScreenTheme">@style/Theme.DTTAssesmentAndroid</item>
     </style>
 

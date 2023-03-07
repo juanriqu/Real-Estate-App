@@ -88,17 +88,32 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.076" />
 
-            <ImageView
-                android:id="@+id/ubication_icon_detailed"
-                android:layout_width="14dp"
+            <TextView
+                android:id="@+id/house_distance_number_detailed"
+                android:layout_width="55dp"
                 android:layout_height="14dp"
-                android:src="@drawable/ic_location"
+                android:fontFamily="@font/gothamssm_book"
+                android:textIsSelectable="false"
+                android:textSize="8sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.883"
+                app:layout_constraintHorizontal_bias="0.977"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.088"
+                app:tint="@color/medium_grey" />
+
+            <ImageView
+                android:id="@+id/bedroomIconDetailed"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_bed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.087"
                 app:tint="@color/medium_grey"
                 tools:ignore="ContentDescription" />
 
@@ -111,24 +126,10 @@
                 android:textSize="8sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.57"
+                app:layout_constraintHorizontal_bias="0.526"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.088" />
-
-            <ImageView
-                android:id="@+id/bedroomIconDetailed"
-                android:layout_width="14dp"
-                android:layout_height="14dp"
-                android:src="@drawable/ic_bed"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.524"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.088"
-                app:tint="@color/medium_grey"
-                tools:ignore="ContentDescription" />
+                app:layout_constraintVertical_bias="0.087" />
 
             <ImageView
                 android:id="@+id/bathroomIconDetailed"
@@ -137,10 +138,10 @@
                 android:src="@drawable/ic_bath"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.649"
+                app:layout_constraintHorizontal_bias="0.605"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.088"
+                app:layout_constraintVertical_bias="0.087"
                 app:tint="@color/medium_grey"
                 tools:ignore="ContentDescription" />
 
@@ -153,11 +154,25 @@
                 android:textSize="8sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.695"
+                app:layout_constraintHorizontal_bias="0.651"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.088"
+                app:layout_constraintVertical_bias="0.087"
                 app:tint="@color/medium_grey" />
+
+            <ImageView
+                android:id="@+id/layers_icon_detailed"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_layers"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.73"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.087"
+                app:tint="@color/medium_grey"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/house_layers_number_detailed"
@@ -168,40 +183,25 @@
                 android:textSize="8sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.82"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.088"
-                app:tint="@color/medium_grey" />
-
-            <ImageView
-                android:id="@+id/layers_icon_detailed"
-                android:layout_width="14dp"
-                android:layout_height="14dp"
-                android:src="@drawable/ic_layers"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.774"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.088"
-                app:tint="@color/medium_grey"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/house_distance_number_detailed"
-                android:layout_width="40dp"
-                android:layout_height="14dp"
-                android:fontFamily="@font/gothamssm_book"
-                android:textIsSelectable="false"
-                android:textSize="8sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.991"
+                app:layout_constraintHorizontal_bias="0.777"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.087"
                 app:tint="@color/medium_grey" />
+
+            <ImageView
+                android:id="@+id/ubication_icon_detailed"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_location"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.839"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.087"
+                app:tint="@color/medium_grey"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/descriptionText"

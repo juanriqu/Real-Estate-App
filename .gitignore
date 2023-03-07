@@ -83,3 +83,6 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+DTTAssesmentAndroid/.idea/compiler.xml
+DTTAssesmentAndroid/.idea/misc.xml
+DTTAssesmentAndroid/.idea/deploymentTargetDropDown.xml

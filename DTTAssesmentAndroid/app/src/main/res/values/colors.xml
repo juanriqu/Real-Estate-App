@@ -16,4 +16,5 @@
     <color name="bottom_nav_background_color">@color/white</color>
     <color name="bottom_nav_inactive_color">@color/light_grey</color>
     <color name="primary_color">@color/black</color>
+    <color name="ic_launcher_background">#FF1535</color>
 </resources>
