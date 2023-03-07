@@ -18,6 +18,7 @@
         android:id="@+id/about_description"
         android:layout_width="354dp"
         android:layout_height="331dp"
+        android:scrollbars="vertical"
         android:fontFamily="@font/gothamssm_book"
         android:inputType="none"
         android:text="@string/about_lorem_ipsum"
@@ -61,14 +62,14 @@
         tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/aboutDeveloperContact"
         android:layout_width="73dp"
         android:layout_height="48dp"
         android:autoLink="web"
         android:fontFamily="@font/gothamssm_book"
         android:inputType="none"
-        android:text="@string/by_dtt"
-        android:textColor="@color/black"
+        android:text="@string/by_developer"
+        android:textColor="@android:color/holo_blue_dark"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

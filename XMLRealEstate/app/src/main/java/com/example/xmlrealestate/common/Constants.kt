@@ -27,6 +27,9 @@ object Constants {
     const val ASSET_DB = "assetDB"
     const val HOUSES_DATABASE = "houses_database"
 
+    //AboutFragment Constants
+    const val GITHUB_PROFILE_URL = "https://github.com/juanriqu"
+
     //AuthInterceptor Constants
     const val API_KEY_HEADER = "Access-Key"
 

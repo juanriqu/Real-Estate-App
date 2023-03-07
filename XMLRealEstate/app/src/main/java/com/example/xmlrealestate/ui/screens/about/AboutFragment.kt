@@ -1,5 +1,7 @@
 package com.example.xmlrealestate.ui.screens.about
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,12 +31,23 @@ class AboutFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         configTopAppBar()
         binding.imageView.load(R.drawable.dtt_banner)
+        configAboutDeveloper()
     }
 
     private fun configTopAppBar() {
         val topAppBar = (activity as MainActivity).findViewById<MaterialToolbar>(R.id.toolbar)
         topAppBar.menu.clear()
-        val topAppBarTextView =  (activity as MainActivity).findViewById<TextView>(R.id.toolbar_title)
+        val topAppBarTextView =
+            (activity as MainActivity).findViewById<TextView>(R.id.toolbar_title)
         topAppBarTextView.text = Constants.ABOUT_FRAGMENT_TITLE
+    }
+
+    private fun configAboutDeveloper() {
+        binding.aboutDeveloperContact.setOnClickListener {
+            val url = Constants.GITHUB_PROFILE_URL
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
     }
 }
