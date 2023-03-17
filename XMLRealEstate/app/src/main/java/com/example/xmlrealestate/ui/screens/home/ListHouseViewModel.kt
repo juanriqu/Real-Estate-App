@@ -44,22 +44,25 @@ class ListHouseViewModel @Inject constructor(
         }
     }
 
+    /**
+     * Gets the houses checking if the device has internet connection or not.
+     *
+     * *If the device has internet connection, we get the data [getHousesWithInternet]
+     *
+     * *If the device has no internet connection, we get the data [getHousesWithNoInternet]
+     *
+     */
     private fun getHouses() {
-        //Check if the device has internet connection
-        viewModelScope.launch {
-            if (Utils.hasInternetConnection(
-                    context = appContext
-                )
-            ) {
-                //In case of internet connection, we get the data from the API
-                getHousesWithInternet()
-            } else {
-                //In case of no internet connection, we get the data from the database
-                getHousesWithNoInternet()
-            }
+        if (Utils.hasInternetConnection(context = appContext)) {
+            getHousesWithInternet()
+        } else {
+            getHousesWithNoInternet()
         }
     }
 
+    /**
+     * Gets the houses, if there is any error, it will be shown in the UI.
+     */
     private fun getHousesWithInternet() {
         viewModelScope.launch {
             getAllHousesUseCase.invoke().catch { e ->
@@ -87,6 +90,9 @@ class ListHouseViewModel @Inject constructor(
         }
     }
 
+    /**
+     * Gets the houses, with an error message indicating that there is no internet connection.
+     */
     private fun getHousesWithNoInternet() {
         viewModelScope.launch {
             getAllHousesUseCase.invoke().catch { e ->

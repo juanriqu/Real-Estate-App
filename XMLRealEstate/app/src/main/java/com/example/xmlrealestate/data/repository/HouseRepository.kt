@@ -40,7 +40,7 @@ class HouseRepository @Inject constructor(
     }
 
     /**
-     * This function retrieves a house from the local database by its ID. It returns a Flow of House.
+     * This function retrieves a house from the local database by its ID. It returns a Flow of [House].
      */
     fun getHouseCached(id: Int): Flow<House> {
         return flow {
