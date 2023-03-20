@@ -39,7 +39,7 @@ This app has been tested in a Pixel 3XL, to take in consideration the screen siz
 1. Clone this repository and open it in Android Studio.
     - To use the app with location services, you need to have a Google Maps API key. You can get yours [here](https://developers.google.com/maps/documentation/android-sdk/get-api-key).
 
-2. Create the `gradle.properties` file in this path [DTTAssesmentAndroid/](https://github.com/juanriqu/Real-Estate-App/tree/main/DTTAssesmentAndroid/) and add the following lines like this example below:
+2. Create the `gradle.properties` file in this path [XMLRealEstate/](https://github.com/juanriqu/Real-Estate-App/tree/main/XMLRealEstate/) and add the following lines like this example below:
 
     `android.useAndroidX=true`
 
